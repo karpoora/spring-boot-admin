@@ -1,4 +1,4 @@
-package com.learning.springboot.metrics;
+package com.microservices.server.admin;
 
 import de.codecentric.boot.admin.config.EnableAdminServer;
 import org.springframework.boot.SpringApplication;
@@ -12,8 +12,8 @@ import org.springframework.context.annotation.Configuration;
 @EnableAdminServer
 //@EnableAZSSO
 //@EnableGlobalMethodSecurity(prePostEnabled = true)
-public class MetricsApplication {
+public class MicroserviceServerAdmin {
 	public static void main(String[] args) {
-		SpringApplication.run(MetricsApplication.class, args);
+		SpringApplication.run(MicroserviceServerAdmin.class, args);
 	}
 }

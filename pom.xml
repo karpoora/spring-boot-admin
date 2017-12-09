@@ -3,13 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.learning.springboot.metrics</groupId>
-	<artifactId>spring-boot-metrics</artifactId>
+	<groupId>com.microservices.server.admin</groupId>
+	<artifactId>microservices-server-admin</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>springboot-metrics</name>
-	<description>Calculate metrics for all springboot project</description>
+	<name>microservice-serer-admin</name>
+	<description>Calculate metrics for all springboot microservices application</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
