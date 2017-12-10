@@ -1,6 +1,22 @@
+eureka:         #tells about the Eureka server details and its refresh time
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+    healthcheck:
+      enabled: true
+    lease:
+      duration: 5
+
 spring:
   application:
-    name: microserviceServerAdmin
+    name: server-admin
   cloud:
     config:
-      uri: http://localhost:8081/
+      discovery:
+        enabled: true
+        service-id: server-config
+
