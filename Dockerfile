@@ -1,7 +1,6 @@
-FROM openjdk:8
-ADD target/microservices-server-admin.jar microservices-server-admin.jar
-EXPOSE 8082
-ENTRYPOINT ["java","-jar","-Dspring.profiles.active=local","microservices-server-admin.jar"]
+FROM java:8
+ADD target/server-admin.jar server-admin.jar
+ENTRYPOINT ["java","-jar","-Dspring.profiles.active=local","server-admin.jar"]
 
 
 #docker build -f Dockerfile -t server-admin .
