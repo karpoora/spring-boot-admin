@@ -1,16 +1,3 @@
-eureka:         #tells about the Eureka server details and its refresh time
-  instance:
-    leaseRenewalIntervalInSeconds: 1
-    leaseExpirationDurationInSeconds: 2
-    prefer-ip-address: false
-  client:
-    serviceUrl:
-      defaultZone: http://35.229.116.148:8761//eureka
-    healthcheck:
-      enabled: true
-    lease:
-      duration: 5
-
 spring:
   application:
     name: server-admin
@@ -19,4 +6,16 @@ spring:
       discovery:
         enabled: true
         service-id: server-config
+
+eureka:         #tells about the Eureka server details and its refresh time
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+    prefer-ip-address: false
+  client:
+    serviceUrl:
+      defaultZone: http://35.229.116.148:8761//eureka
+    lease:
+      duration: 5
+
 
